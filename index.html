@@ -1,151 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROBOW | Healthy Cloud Kitchen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, Helvetica, sans-serif;
-        }
+<title>PROBOW | Healthy But Not Boring</title>
 
-        body{
-            background:#f8f8f8;
-            color:#333;
-        }
+<style>
 
-        header{
-            background:#111;
-            color:white;
-            padding:18px;
-            text-align:center;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-        .hero{
-            text-align:center;
-            padding:60px 20px;
-            background:white;
-        }
+body{
+    background:#f8f7f2;
+    color:#333;
+}
 
-        .hero h1{
-            font-size:42px;
-            margin-bottom:15px;
-        }
+header{
+    background:#5EA63A;
+    color:white;
+    padding:18px;
+    text-align:center;
+}
 
-        .hero p{
-            font-size:20px;
-            margin-bottom:30px;
-            color:#666;
-        }
+header img{
+    width:220px;
+    max-width:80%;
+}
 
-        .btn{
-            display:inline-block;
-            background:#25D366;
-            color:white;
-            text-decoration:none;
-            padding:16px 32px;
-            border-radius:50px;
-            font-size:20px;
-            font-weight:bold;
-        }
+.hero{
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1600');
+    background-size:cover;
+    background-position:center;
+    height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
 
-        .section{
-            max-width:1000px;
-            margin:auto;
-            padding:60px 20px;
-        }
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
 
-        h2{
-            text-align:center;
-            margin-bottom:40px;
-        }
+.hero p{
+    font-size:22px;
+    margin-bottom:25px;
+}
 
-        .cards{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-            gap:20px;
-        }
+.btn{
+    display:inline-block;
+    background:#5EA63A;
+    color:white;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+}
 
-        .card{
-            background:white;
-            border-radius:15px;
-            padding:20px;
-            text-align:center;
-            box-shadow:0 8px 20px rgba(0,0,0,.08);
-        }
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:70px 20px;
+}
 
-        .price{
-            color:green;
-            font-size:22px;
-            margin:15px 0;
-            font-weight:bold;
-        }
+.section h2{
+    text-align:center;
+    margin-bottom:45px;
+    font-size:40px;
+}
 
-        footer{
-            background:#111;
-            color:white;
-            text-align:center;
-            padding:25px;
-            margin-top:40px;
-        }
-    </style>
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:18px;
+    text-align:center;
+}
+
+.contact{
+    background:#5EA63A;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.contact h2{
+    margin-bottom:25px;
+    font-size:40px;
+}
+
+.contact p{
+    font-size:22px;
+    margin:12px 0;
+}
+
+footer{
+    background:#222;
+    color:#ddd;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>🥗 PROBOW</h1>
+
+<img src="images/logo.png" alt="PROBOW Logo">
+
 </header>
 
 <section class="hero">
 
-<h1>Eat Healthy.<br>Live Better.</h1>
+<div>
 
-<p>Fresh Salads • Rice Bowls • Smoothies</p>
+<h1>Healthy But Not Boring</h1>
 
-<a class="btn"
-href="https://wa.me/91YOURNUMBER?text=Hi%20PROBOW,%20I%20want%20to%20place%20an%20order.">
+<p>Fresh Bowls • Salads • Wraps • Healthy Meals</p>
+
+<a class="btn" href="https://wa.me/917874610393">
 Order on WhatsApp
 </a>
+
+</div>
 
 </section>
 
 <section class="section">
 
-<h2>Our Best Sellers</h2>
+<h2>Our Signature Bowls</h2>
 
-<div class="cards">
+<div class="grid">
 
 <div class="card">
-<h3>WalkTak Salad</h3>
-<p class="price">₹249</p>
+
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800">
+
+<h3>Fresh Salads</h3>
+
 </div>
 
 <div class="card">
-<h3>Tabbouleh Bowl</h3>
-<p class="price">₹279</p>
+
+<img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800">
+
+<h3>Healthy Bowls</h3>
+
 </div>
 
 <div class="card">
-<h3>Rice Bowl</h3>
-<p class="price">₹299</p>
+
+<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800">
+
+<h3>Protein Meals</h3>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=800">
+
+<h3>Wraps & More</h3>
+
 </div>
 
 </div>
 
 </section>
 
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<p><b>WhatsApp:</b> +91 7874610393</p>
+
+<p><b>Instagram:</b> @eatprobow</p>
+
+<p>Delivery Only • No Take Away</p>
+
+<br>
+
+<a class="btn" href="https://wa.me/917874610393">
+
+Order Now
+
+</a>
+
+</section>
+
 <footer>
 
-<h3>PROBOW</h3>
-
-<p>Healthy Cloud Kitchen</p>
+© 2026 PROBOW | Healthy But Not Boring
 
 </footer>
 
 </body>
+
 </html>
